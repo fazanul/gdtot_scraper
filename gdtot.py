@@ -7,7 +7,7 @@ from urllib.parse import urlparse, parse_qs
 URL = "" 
 
 # add your crypt cookie here
-crypt = "" 
+crypt = "YXNEV2JXVzVwNTVpWUU3VnZZTUpVeUJlZVgxSUh4OE9LSWNlU2phMStPMD0%3D" 
 
 # ==========================================
 
@@ -33,7 +33,7 @@ def gdtot_dl(url):
     info = parse_info(res)
     info['src_url'] = url
 
-    res = client.get(f"https://new.gdtot.top/dld?id={url.split('/')[-1]}")
+    res = client.get(f"https://new2.gdtot.sbs/dld?id={url.split('/')[-1]}")
     
     try:
         url = re.findall('URL=(.*?)"', res.text)[0]
